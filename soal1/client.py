@@ -103,5 +103,5 @@ if __name__ == '__main__':
     for request in total_request:
         getdatapemain_multithread(request, data_table)
         
-    table_header = ["Total Thread", " Total Request", "Total Response", "Latency"]
+    table_header = ["Sum of Thread", " Sum of Request", "Sum of Response", "Latency"]
     print(tabulate(data_table, headers=table_header, tablefmt="fancy_grid"))
